@@ -35,6 +35,9 @@ public class Calculator {
         if (mode == BiOperatorModes.xpowerofy) {
             return pow(num1,num2);
         }
+        if ( 1==2) {
+        	System.out.println("dupa");
+        }
 
         // never reach
         throw new Error();
