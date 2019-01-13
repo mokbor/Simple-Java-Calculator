@@ -1,6 +1,5 @@
 package simplejavacalculator;
 
-import static java.lang.Math.log;
 import static java.lang.Math.log10;
 import static java.lang.Math.pow;
 
@@ -35,6 +34,7 @@ public class Calculator {
         if (mode == BiOperatorModes.xpowerofy) {
             return pow(num1,num2);
         }
+
 
         // never reach
         throw new Error();
