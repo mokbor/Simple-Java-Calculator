@@ -1,4 +1,16 @@
 lenguage: java
 jdk: oraclejdk8  
+
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key:
+    secure: [redacted]
+  file:
+    - "Simple-Java-Calculator-0.0.1-SNAPSHOT.jar"
+  on:
+    tags: false
+    all_branches: true
+
 script: 
     - mvn clean package
