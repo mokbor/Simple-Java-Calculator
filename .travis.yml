@@ -14,6 +14,7 @@ deploy:
   on:
     tags: false
     all_branches: true
+    repo: mokbor/Simple-Java-Calculator
 
 branches:
   except:
