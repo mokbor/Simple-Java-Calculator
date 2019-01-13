@@ -1,7 +1,5 @@
 lenguage: java
 jdk: oraclejdk8 
-before_install:
-   - sudo: false
 
 before_deploy:
   - eval "$(ssh-agent -s)" #start the ssh agent
