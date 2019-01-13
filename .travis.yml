@@ -1,15 +1,16 @@
 lenguage: java
 jdk: oraclejdk8 
+before_install:
+   - sudo: false
 
 before_deploy:
   - eval "$(ssh-agent -s)" #start the ssh agent
-  - chmod 600 .travis/deploy_key.pem # this key should have push access
-  - ssh-add .travis/deploy_key.pem
   - git config --global user.email "builds@travis-ci.com"
   - git config --global user.name "Travis CI"
   - export GIT_TAG=$TRAVIS_BRANCH-v0.1.$TRAVIS_BUILD_NUMBER
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-  - git push -q http://github.com/mokbor/Simple-Java-Calculator --tags
+  - git remote add git@github.com/mokbor/Simple-Java-Calculator
+  - git push --tags
 
 
 deploy:
