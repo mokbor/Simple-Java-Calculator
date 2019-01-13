@@ -6,6 +6,7 @@ import simplejavacalculator.Calculator.BiOperatorModes;
 
 class Test {
 
+	@Test
 	void testPlus() {
 		Calculator.BiOperatorModes mode = BiOperatorModes.add;
 		Calculator calc = new Calculator();
