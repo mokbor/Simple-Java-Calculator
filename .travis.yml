@@ -1,5 +1,4 @@
 lenguage: java
 jdk: oraclejdk8  
 script: 
-    - mvn test
-    - mvn clean package
+    - mvn verify

@@ -31,7 +31,7 @@ public class Calculator {
 	private Double num1, num2;
     private BiOperatorModes mode = BiOperatorModes.normal;
 
-    Double calculateBiImpl() {
+    public Double calculateBiImpl() {
         if (mode == BiOperatorModes.normal) {
             return num2;
         }

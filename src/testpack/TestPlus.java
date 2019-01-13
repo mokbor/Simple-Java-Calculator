@@ -1,10 +1,11 @@
-package simplejavacalculator;
+package testpack;
 
 import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
 
+import simplejavacalculator.Calculator;
 import simplejavacalculator.Calculator.BiOperatorModes;
 
 public class TestPlus {
