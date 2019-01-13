@@ -10,11 +10,11 @@ class Test {
 	void testPlus() {
 		Calculator.BiOperatorModes mode = BiOperatorModes.add;
 		Calculator calc = new Calculator();
-		calc.setNum1(21.0);
+		calc.setNum1(21.00);
 		calc.setMode(mode);
 		calc.setNum2(8.99);
 		Double wynik = calc.calculateBiImpl();
-		assertEquals(29.99, wynik, 0);
+		assertEquals(29.99, wynik, 0.00000001);
 		
 		
 	}
