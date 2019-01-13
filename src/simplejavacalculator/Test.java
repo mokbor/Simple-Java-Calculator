@@ -1,8 +1,8 @@
 package simplejavacalculator;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import simplejavacalculator.Calculator;
 import simplejavacalculator.Calculator.BiOperatorModes;
-
-import static org.junit.Assert.assertEquals;
 
 class Test {
 
