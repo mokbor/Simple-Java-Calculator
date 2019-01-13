@@ -8,7 +8,7 @@ deploy:
   skip_cleanup: true
   provider: releases
   api_key:
-    secure: d42a95d8b461f9bc082ae0750517fb88408ad250
+    secure: "d42a95d8b461f9bc082ae0750517fb88408ad250"
   file:
     - "Simple-Java-Calculator-0.0.1-SNAPSHOT.jar"
   on:
