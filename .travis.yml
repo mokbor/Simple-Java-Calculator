@@ -1,3 +1,4 @@
+travis setup releases
 lenguage: java
 jdk: oraclejdk8 
 
@@ -10,3 +11,5 @@ deploy:
   skip_cleanup: true
   draft: true
   all_branches: true
+  on:
+    tags: false
