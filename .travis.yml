@@ -17,5 +17,5 @@ deploy:
   draft: true
   all_branches: true
   on:
-    tags: true
+    tags: false
     
