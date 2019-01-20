@@ -1,6 +1,9 @@
 lenguage: java
 jdk: oraclejdk8 
 
+before_deploy:
+# Set up git user name and tag this commit
+- git config --local user.name mokbor
 deploy:
   provider: releases
   api_key: "8a793fc0fec89b26b4c9f40485a8f12814e1e833"
