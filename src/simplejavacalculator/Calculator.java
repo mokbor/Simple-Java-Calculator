@@ -12,10 +12,26 @@ public class Calculator {
         square, squareRoot, oneDevidedBy, cos, sin, tan ,log , rate
     }
 
-    private Double num1, num2;
+    public Double getNum1() {
+		return num1;
+	}
+
+	public void setNum1(Double num1) {
+		this.num1 = num1;
+	}
+
+	public Double getNum2() {
+		return num2;
+	}
+
+	public void setNum2(Double num2) {
+		this.num2 = num2;
+	}
+
+	private Double num1, num2;
     private BiOperatorModes mode = BiOperatorModes.normal;
 
-    private Double calculateBiImpl() {
+    public Double calculateBiImpl() {
         if (mode == BiOperatorModes.normal) {
             return num2;
         }
@@ -54,7 +70,15 @@ public class Calculator {
         }
     }
 
-    public Double calculateEqual(Double num) {
+    public BiOperatorModes getMode() {
+		return mode;
+	}
+
+	public void setMode(BiOperatorModes mode) {
+		this.mode = mode;
+	}
+
+	public Double calculateEqual(Double num) {
         return calculateBi(BiOperatorModes.normal, num);
     }
 
