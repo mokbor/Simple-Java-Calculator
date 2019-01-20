@@ -1,9 +1,6 @@
 lenguage: java
 jdk: oraclejdk8 
 
-
-before_deploy:
-  - travis setup releases
 deploy:
   provider: releases
   api_key: "8a793fc0fec89b26b4c9f40485a8f12814e1e833"
