@@ -3,17 +3,11 @@ jdk: oraclejdk8
 
 script: mvn clean package    
 
-before_deploy:
-# Set up git user name and tag this commit
-- git config --local user.name mokbor
-- git config --local user.email 171909@edu.p.lodz.pl
-- git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
-
 deploy:
   provider: releases
-  api_key: "8a793fc0fec89b26b4c9f40485a8f12814e1e833"
-  file: "Simple-Java-Calculator-0.0.1-SNAPSHOT.jar"
   skip_cleanup: true
+  api_key: $git_toks
+  file: "Simple-Java-Calculator-0.0.1-SNAPSHOT.jar"
   draft: true
   all_branches: true
   on:
