@@ -7,7 +7,7 @@ deploy:
   provider: releases
   skip_cleanup: true
   api_key: $git_toks
-  file: "Simple-Java-Calculator-0.0.1-SNAPSHOT.jar"
+  file: "/home/travis/build/mokbor/Simple-Java-Calculator/target/Simple-Java-Calculator-0.0.1-SNAPSHOT.jar"
   draft: true
   all_branches: true
   on:
